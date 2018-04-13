@@ -1,0 +1,6 @@
+Type: Jupyter Notebook Extension
+Compatibility: 5.x
+Main: main.js
+Section: tree
+Name: VCS Integration (Tree)
+Description: Integrates git into the tree view

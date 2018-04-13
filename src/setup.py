@@ -1,16 +1,23 @@
 from setuptools import setup, find_packages
 import os
 
-print("setup.py has been called")
+# get paths to all the extension files
+extension_files = []
+for (dirname, dirnames, filenames) in os.walk("vcs_integration/nbextensions"):
+    root = os.path.relpath(dirname, "vcs_integration")
+    for filename in filenames:
+        if filename.endswith(".pyc"):
+            continue
+        extension_files.append(os.path.join(root, filename))
+
+print(extension_files)
 
 setup(
-    name="test",
-    version="0.0.1",
-    description="test for Jupyter Notebook",
+    name="VCS Integration",
+    version="0.1.0",
+    description="VCS Integration for Jupyter Notebook",
     packages=find_packages(),
     package_data={
-    	'jupyter_nbextensions_vcs_integration': [
-            'jupyter_nbextensions_vcs_integration/main.js',
-            'jupyter_nbextensions_vcs_integration/__init__.py']
+    	'vcs_integration': extension_files
     }
 )

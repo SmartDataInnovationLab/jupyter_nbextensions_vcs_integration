@@ -1,0 +1,19 @@
+.CodeMirror-gutters {
+	min-width: 20px;
+}
+
+.CodeMirror-changes-gutter {
+  width: 4px;
+}
+
+div.CodeMirror-code .fa-plus {
+  color: lightgreen;
+}
+
+div.CodeMirror-code .fa-minus {
+  color: red;
+}
+
+div.CodeMirror-code .fa-pencil {
+  color: yellow;
+}

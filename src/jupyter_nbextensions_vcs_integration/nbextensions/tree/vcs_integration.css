@@ -1,0 +1,15 @@
+.vcs-status-modified {
+	color: yellow;
+}
+
+.vcs-status-added {
+	color: green;
+}
+
+.vcs-status-untracked {
+	color: purple;
+}
+
+.vcs-status-ignored {
+	color: gray;
+}

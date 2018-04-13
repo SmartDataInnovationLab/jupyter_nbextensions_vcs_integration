@@ -1,0 +1,16 @@
+div.vcs-marker {
+	width: 5px;
+	height: inherit;
+}
+
+div.vcs-new-cell {
+	background-color: lightgreen;
+}
+
+div.vcs-modified-cell {
+	background-color: yellow;
+}
+
+div.vcs-deleted-cell {
+	background-color: red;
+}

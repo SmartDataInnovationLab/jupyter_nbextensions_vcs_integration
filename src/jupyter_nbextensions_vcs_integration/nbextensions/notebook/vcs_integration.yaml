@@ -1,0 +1,22 @@
+Type: Jupyter Notebook Extension
+Compatibility: 5.x
+Main: main.js
+Name: VCS Integration (Notebook)
+Description: Integrates git into the notebook
+Parameters:
+- name: vcs
+  description: Which VCS would you like to use?
+  input_type: string
+  default: git
+- name: visualize_cell_changes
+  description: Whether to visualize cell changes (new / removed cells)
+  input_type: checkbox
+  default: true
+- name: visualize_cell_contents_changes
+  description: Whether to visualize cell content changes (new / removed / modified lines)
+  input_type: checkbox
+  default: true
+- name: reminder_commit
+  description: Do you wish to get reminders, so you don't forget to commit
+  input_type: checkbox
+  default: true
